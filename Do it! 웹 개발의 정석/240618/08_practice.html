@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8장 마무리 문제</title>
+</head>
+<style>
+    img {
+        border-radius: 50%;
+        width: 15%;
+        border: 1px solid grey;
+        box-shadow: 5px 5px 30px 2px #000;
+    }
+
+    section {
+        width: 800px;
+        margin: 0 auto;
+        margin-bottom: 5%;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+
+    h3 {
+        font-size: 1.0em;
+    }
+
+    p {
+        line-height: 20px;
+        font-size: 12px;
+    }
+
+    footer {
+        width: 100%;
+        height: 50px;
+        background-color: #222;
+        clear: left;
+    }
+
+    footer>p {
+        color: #fff;
+        font-size: 0.9em;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    article {
+        float: left;
+        width: 350px;
+        height: 200px;
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #ccc;
+    }
+
+    li {
+        list-style: none;
+        padding: 10px 20px;
+        background-color: #ccc;
+        float: left;
+    }
+
+    li:hover {
+        background-color: #000;
+        a {
+            color: white;
+        }
+    }
+    a {
+        color:black;
+        display: block;
+        text-decoration: none;
+    }
+
+</style>
+
+<body>
+    <!-- 1번  -->
+    <img src="https://velog.velcdn.com/images/warmsy/post/c3494b7a-069a-4705-a26f-bd76772a31f6/image.jpg" alt="">
+
+    <!-- 2번  -->
+    <section>
+        <h2>레서판다 용품 준비하기</h2>
+        <article class="at1">
+            <h3>레서판다 집 </h3>
+            <p>레서판다가 편히 쉴 수 있는 포근한 집이 필요합니다. 레서판다의 집은 레서판다가 다 큰 후에도 계속 쓸 수 있는 집으로 구입하세요.집을 구입하실 때는 박음질이 잘 되어 있는지, 세탁이
+                간편한
+                제품인지 꼭 확인하시고 고르시는 것이 좋습니다.</p>
+        </article>
+        <article class="at2">
+            <h3>레서판다 먹이 </h3>
+            <p>레서판다의 먹이는 꼭 어린 레서판다용으로 나와있는 사료를 선택하세요. 레서판다들은 사람에 비해 성장속도가 8배정도 빠르답니다. 따라서 레서판다에게는 성장속도에 맞는 사료를 급여하셔야
+                합니다.
+                사람이 먹는 음식을 먹게 되면 양념과 향신료에 입맛이 익숙해지고, 비만이 될 가능성이 매우 높아집니다. 레서판다용 사료는 생후 12개월까지 급여하셔야 합니다.</p>
+        </article>
+        <article class="at3">
+            <h3>밥그릇, 물병 </h3>
+            <p>밥그릇은 쉽게 넘어지지 않도록 바닥이 넓은 것이 좋습니다.물병은 대롱이 달린 것으로 선택하세요. 밥그릇에 물을 주게 되면 입 주변에 털이 모두 젖기 때문에 비위생적이므로 대롱을 통해서 물을
+                먹을 수 있는 물병을 마련하시는 것이 좋습니다.</p>
+        </article>
+        <article class="at4">
+            <h3>이름표, 목줄</h3>
+            <p>레서판다를 잃어버릴 염려가 있으니 산책할 무렵이 되면 이름표를 꼭 목에 걸어주도록 하세요. 그리고 방울이 달린 목걸이를 하고자 하실 때는 신중하셔야 합니다. 움직일 때마다 방울이 딸랑
+                거리면
+                신경이 예민한 레서판다들에게는 좋지 않은 영향을 끼칠 수 있기 때문입니다.</p>
+        </article>
+        <footer>
+            <p>boxmodel 연습하기</p>
+        </footer>
+    </section>
+    </div>
+
+    <!-- 3번  -->
+    <nav>
+        <ul>
+            <li><a href="#">메뉴1</a></li>
+            <li><a href="#">메뉴2</a></li>
+            <li><a href="#">메뉴3</a></li>
+            <li><a href="#">메뉴4</a></li>
+        </ul>
+    </nav>
+</body>
+
+</html>
+
+<!-- 
+footer에는 article이 없는데 float:left 를 사용할 때 영향을 받는 이유
+- 요소들이 왼쪽으로 정렬되면서 컨텍스트가 깨지기 때문이다. 따라서 footer에는 float를 제거해주어야 의도한대로 화면이 보여짐.
+
+[GPT]
+"컨텍스트가 깨진다"는 표현은 float 속성을 사용한 요소들이 그 주위의 다른 블록 요소들의 레이아웃에 영향을 미쳐 의도한 대로 배치되지 않는 상황을 의미합니다. 좀 더 구체적으로 말하면, float 속성을 가진
+요소들이 정상적인 문서 흐름에서 벗어나게 되면서, 그 다음에 오는 블록 요소들이 원래의 배치대로 표시되지 않게 되는 상황을 말합니다.
+
+예를 들어, float 속성을 가진 article 요소들이 문서 흐름에서 벗어나 좌우로 배치되면, 이들 요소 다음에 나오는 footer 요소는 float 요소들을 인식하지 못하고, 마치 그들이 존재하지 않는 것처럼
+자신도 상단에 배치되게 됩니다. 이는 문서의 레이아웃을 깨뜨리며, 원하는 배치가 되지 않게 합니다.
+-->
+
