@@ -1,39 +1,56 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>변형 알아보기</title>
+    <title>Transition timing function</title>
     <style>
-        div {
-            border: 10px solid greenyellow;
-            width: 350px;
-            height: 500px;
+        #ex div {
+            float: left;
+            width: 100px;
+            height: 50px;
+            margin: 5px 10px;
+            padding: 5px;
+            color: white;
+            background-color: #006aff;
+            border-radius: 5px;
+            text-align: center;
+            font-weight: bold;
         }
-        div:hover {
-            cursor: pointer;
+
+        #ex:hover div {
+            height: 400px;
         }
-        img {
-            width: 300px;
-            height: 270px;
+
+        #ex .ease {
+            transition: 3s ease;
         }
-        img:hover {
-            /*transform: translate(1000px, 100px);*/
-            /*transform: translateX(30px);*/
-            /*transform: translateY(30px);*/
-            /*transform: translateZ(30px);*/
-            /*transform: translate3d(10px, 30px, 50px);*/
-            transform: scale(2);
-            transform: rotate(90deg);
-            
+
+        #ex .linear {
+            transition: 3s linear;
+        }
+
+        #ex .ease-in {
+            transition: 3s ease-in;
+        }
+
+        #ex .ease-out {
+            transition: 3s ease-out;
+        }
+
+        #ex .ease-in-out {
+            transition: 3s ease-in-out;
         }
     </style>
 </head>
 
 <body>
-    <div>
-        <img src="./kero.png" alt="">
+    <div id="ex">
+        <div class="ease"> ease </div>
+        <div class="linear"> linear </div>
+        <div class="ease-in"> ease-in </div>
+        <div class="ease-out"> ease-out </div>
+        <div class="ease-in-out"> ease-in-out </div>
     </div>
 </body>
 
